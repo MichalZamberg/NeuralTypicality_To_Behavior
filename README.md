@@ -62,3 +62,7 @@ This tool assumes some familiarity with neuroimaging formats (AFNI, NIfTI).
 If your data is in a different format (e.g. SPM, FSL), consider converting to NIfTI first.
 Preprocessing steps (e.g. alignment, smoothing, masking) should ideally be done before using this tool.
 
+📚 Attribution
+This project was developed as part of the WIS Python programming course at the Weizmann Institute of Science.
+The goal was to build a useful, real-world tool for research or personal use, extending beyond the course itself.
+
