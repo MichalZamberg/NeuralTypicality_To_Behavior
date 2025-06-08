@@ -1,10 +1,10 @@
-# NeuralTypicality_To_Behavior
-🧠 fMRI-Behavior-Correlation
+# Neural Activity To Behavior
+# 🧠 fMRI-Behavior-Correlation
 Overview
 
 This project is a Python-based tool designed to correlate fMRI data (in AFNI BRIK/HEAD format) with behavioral scores. The goal is to streamline and automate the analysis of relationships between brain activation patterns and behavioral measures.
 
-✨ Features
+# ✨ Features
 
 Supports AFNI .BRIK / .HEAD input files via nibabel.
 
@@ -20,7 +20,7 @@ Optionally corrects for multiple comparisons (e.g. FDR).
 
 Visualization of brain-behavior correlations via plots or AFNI-compatible overlays.
 
-📥 Input
+# 📥 Input
 
 fMRI Data
 AFNI .BRIK / .HEAD pairs (per subject)
@@ -34,12 +34,12 @@ A subject_id column (matching fMRI file identifiers)
 
 One or more columns with behavioral scores
 
-📤 Output
+# 📤 Output
 Correlation map(s) in BRIK / HEAD format
 
 Diagnostic plots (scatterplots, histograms, etc.)
 
-🛠 Installation
+# 🛠 Installation
 
 Clone the repository:
 git clone https://github.com/your-username/fMRI-Behavior-Correlation.git
@@ -56,13 +56,13 @@ scipy
 matplotlib
 nilearn (optional, for visualization and ROI tools)
 
-📎 Notes
+# 📎 Notes
 
 This tool assumes some familiarity with neuroimaging formats (AFNI, NIfTI).
 If your data is in a different format (e.g. SPM, FSL), consider converting to NIfTI first.
 Preprocessing steps (e.g. alignment, smoothing, masking) should ideally be done before using this tool.
 
-📚 Attribution
+# 📚 Attribution
 This project was developed as part of the WIS Python programming course at the Weizmann Institute of Science.
 The goal was to build a useful, real-world tool for research or personal use, extending beyond the course itself.
 
