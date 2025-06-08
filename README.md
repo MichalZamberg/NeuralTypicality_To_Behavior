@@ -57,6 +57,7 @@ matplotlib
 nilearn (optional, for visualization and ROI tools)
 
 📎 Notes
+
 This tool assumes some familiarity with neuroimaging formats (AFNI, NIfTI).
 If your data is in a different format (e.g. SPM, FSL), consider converting to NIfTI first.
 Preprocessing steps (e.g. alignment, smoothing, masking) should ideally be done before using this tool.
