@@ -38,7 +38,7 @@ def compute_movie_typs(movie_name, subjects, template_nii, output_root="AfniFile
     start_time = time.time()
 
     # Load data
-    movie_mat = np.load(os.path.join('Matrixs', movie_name, f'{movie_name}.npy'))
+    movie_mat = np.load(os.path.join('Matrixs', movie_name, f'{movie_name}.npy'))  ## CHANGE TO CORRECT PATH!!!!!!!
     print(f"🎬 Loaded data shape: {movie_mat.shape}")
     X, Y, Z, TR, numSubs = movie_mat.shape
     volume_shape = (X, Y, Z)
@@ -73,7 +73,7 @@ def compute_movie_typs(movie_name, subjects, template_nii, output_root="AfniFile
         corr_all[..., s] = r
 
     # Save .npy file
-    np.save(os.path.join('Matrixs', movie_name, f'{movie_name}_typs.npy'), corr_all)
+    np.save(os.path.join('Matrixs', movie_name, f'{movie_name}_typs.npy'), corr_all)    ## CHANGE TO CORRECT PATH!!!!!!!
     print(f"💾 Saved 4D correlation matrix to Matrixs/{movie_name}_typs.npy")
 
     # Create output folder
