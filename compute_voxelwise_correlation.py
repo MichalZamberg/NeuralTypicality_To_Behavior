@@ -42,10 +42,10 @@ def compute_voxelwise_correlation(brain_data, ref_vector, movie_name, ref_name, 
     affine = template.affine
     header = template.header.copy()
 
-    outdir = os.path.join("./AfniFiles", movie_name)
+    outdir = os.path.join("./AfniFiles", movie_name)  # CHANE TO CORRECT PATH
     os.makedirs(outdir, exist_ok=True)
 
-    matdir = os.path.join("./Matrixs", movie_name)
+    matdir = os.path.join("./Matrixs", movie_name) # CHANE TO CORRECT PATH
     os.makedirs(matdir, exist_ok=True)
 
     # Stack into 4D volume
@@ -87,6 +87,6 @@ if __name__ == "__main__":
     ref_vector = np.load(sys.argv[2])
     movie_name = sys.argv[3]
     ref_name = sys.argv[4]
-    template_file = sys.argv[5] if len(sys.argv) > 5 else '/Volumes/Labs/ramot/michalwe/Master/fMRI_Analysis/Pyth_analysis_June25/Movie3Typ_corr.nii.gz'
+    template_file = sys.argv[5] if len(sys.argv) > 5 else '/Volumes/Labs/ramot/michalwe/Master/fMRI_Analysis/Pyth_analysis_June25/Movie3Typ_corr.nii.gz' ## CHANGE TO YOUR FILE!!!!
 
     compute_voxelwise_correlation(brain_data, ref_vector, movie_name, ref_name, template_file)
