@@ -29,7 +29,7 @@ def create_movie_data(movie, subjects):
     # Start total processing timer
     total_start = time.time()
     
-    base_path = f'/Volumes/Labs/ramot/All_Data/NewPipline/data_20_ap_rest/SocCog/{movie}'
+    base_path = f'/Volumes/Labs/ramot/All_Data/NewPipline/data_20_ap_rest/SocCog/{movie}'  # CHANGE TO CORRECT PATH!!!!!!!!!!!
     expected_shape = None
     n_subjects = len(subjects)
     subject_shapes = []
@@ -38,7 +38,7 @@ def create_movie_data(movie, subjects):
     print("Determining expected data shape...")
     for subject in subjects:
         subject_dir = Path(base_path) / subject / 'results'
-        afni_files = glob.glob(str(subject_dir / f'errts.{subject}.SocCog.Movie*.tproject+tlrc.BRIK*'))
+        afni_files = glob.glob(str(subject_dir / f'errts.{subject}.SocCog.Movie*.tproject+tlrc.BRIK*'))  
         if afni_files:
             afni_file = afni_files[0]
             if afni_file.endswith('.gz'):
