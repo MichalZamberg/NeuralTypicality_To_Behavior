@@ -28,16 +28,11 @@ AFNI .BRIK / .HEAD pairs (per subject)
 Must be 4D volumes (time series)
 
 Behavioral Data
-A .mat file containing:
-
-A subject_id column (matching fMRI file identifiers)
-
+A npy file containing:
 One or more columns with behavioral scores
 
 # 📤 Output
 Correlation map(s) in BRIK / HEAD format
-
-Diagnostic plots (scatterplots, histograms, etc.)
 
 # 🛠 Installation
 
@@ -55,6 +50,14 @@ pandas
 scipy
 matplotlib
 nilearn (optional, for visualization and ROI tools)
+
+# 🏃‍♀️ Running
+The Codes Order:
+create_movie_data(movie_name, subject_list)
+compute_movie_typs(movie_name, subject_list, template_file, output_root)
+compute_voxelwise_correlation(brain_data, ref_vector, movie_name, ref_name, template_file)
+
+when you run localy don't forget to change the paths of the files in each of the codes.
 
 # 📎 Notes
 
